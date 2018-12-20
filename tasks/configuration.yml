@@ -1,0 +1,13 @@
+---
+
+- name: create groups
+  group:
+    name: '{{ item.name }}'
+    system: '{{ item.system | default(omit) }}'
+    gid: '{{ item.gid | default(omit) }}'
+    state: '{{ item.state | default("present") }}'
+  tags:
+    - role::groups
+    - role::groups:config
+  with_items: '{{ groups_group }}'
+  when: item.name is defined and item.name

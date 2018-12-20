@@ -1,0 +1,9 @@
+---
+
+- name: install groups related packages
+  package:
+    name: '{{ groups_packages }}'
+    state: present
+  tags:
+    - 'role::groups'
+    - 'role::groups:install'
