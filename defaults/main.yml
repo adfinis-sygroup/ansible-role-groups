@@ -1,6 +1,4 @@
 ---
-
-
 # List of groups managed by ansible. E.g.
 #
 # .. code-block:: YAML
@@ -13,4 +11,3 @@
 #
 # The default group list is empty.
 groups_group: []
-
