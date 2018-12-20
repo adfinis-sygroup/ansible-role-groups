@@ -4,6 +4,8 @@
   package:
     name: '{{ groups_packages }}'
     state: present
+  register: groups_register_packages_installed
+  until: groups_register_packages_installed is succeeded
   tags:
     - 'role::groups'
     - 'role::groups:install'
