@@ -1,4 +1,5 @@
 ---
 
+# packages needed to manage groups
 groups_packages:
   - passwd
