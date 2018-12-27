@@ -1,0 +1,6 @@
+---
+
+- name: install groups related packages
+  package:
+    name: '{{ groups_packages }}'
+    state: present

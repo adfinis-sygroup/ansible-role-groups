@@ -1,0 +1,5 @@
+---
+
+# Packages needed to manage groups
+groups_packages:
+  - shadow-utils

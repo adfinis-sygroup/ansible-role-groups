@@ -1,0 +1,13 @@
+---
+# List of groups managed by ansible. E.g.
+#
+# .. code-block:: YAML
+#
+#   groups_group:
+#     - name: wheel
+#       gid: 1000
+#       system: true
+#       state: present
+#
+# The default group list is empty.
+groups_group: []
